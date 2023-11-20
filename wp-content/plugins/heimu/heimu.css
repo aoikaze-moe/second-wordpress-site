@@ -1,0 +1,36 @@
+/**
+ * Heimu Plugin
+ */
+
+body:not(.heimu_rhongomyniad) .heimu,
+body:not(.heimu_rhongomyniad) .heimu a,
+body:not(.heimu_rhongomyniad) a .heimu {
+    display: inline;
+    background-color: #252525;
+    color: #252525 !important;
+    text-shadow: none;
+}
+
+body:not(.heimu_rhongomyniad) .heimu:hover,
+body:not(.heimu_rhongomyniad) .heimu:active {
+    transition: color 0.13s linear;
+    color: #fff !important;
+}
+
+body:not(.heimu_rhongomyniad) .heimu:hover a,
+body:not(.heimu_rhongomyniad) a:hover .heimu {
+    transition: color 0.13s linear;
+    color: #add8e6 !important;
+}
+
+body:not(.heimu_rhongomyniad) .heimu-blur {
+    filter: blur(0.3em);
+}
+
+body:not(.heimu_rhongomyniad) .heimu-blur:hover,
+body:not(.heimu_rhongomyniad) .heimu-blur:active,
+body:not(.heimu_rhongomyniad) .heimu-blur:hover a,
+body:not(.heimu_rhongomyniad) a:hover .heimu-blur {
+    transition: filter 0.13s linear;
+    filter: blur(0);
+}

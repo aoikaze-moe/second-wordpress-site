@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Aperture Initiative &#8211; 风蓝活动室</title>
+	<atom:link href="/second-wordpress-site/author/berryboy2012/feed" rel="self" type="application/rss+xml" />
+	<link>/second-wordpress-site/</link>
+	<description>风蓝动漫社的有爱小屋</description>
+	<lastBuildDate>Sat, 05 Nov 2022 12:40:57 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.1</generator>
+
+<image>
+	<url>https://i0.wp.com/aoikaze.moe/wp-content/uploads/2015/09/cropped-cropped-aoikaze-scaled-2.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Aperture Initiative &#8211; 风蓝活动室</title>
+	<link>/second-wordpress-site/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">224015627</site>	<item>
+		<title>音频后期流程入门指南(上)</title>
+		<link>/second-wordpress-site/2528</link>
+					<comments>/second-wordpress-site/2528#comments</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Fri, 05 Oct 2018 15:12:10 +0000</pubDate>
+				<category><![CDATA[“日在风蓝”]]></category>
+		<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[技术组]]></category>
+		<category><![CDATA[教程]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2528</guid>
+
+					<description><![CDATA[写在最开始 这个系列教程主要针对组内搬砖人员，目的是能让新人快速上手音频录制与处理。文中使用的示例音频，如没有 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h1><a id="_0"></a>写在最开始</h1>
+<p>这个系列教程主要针对组内搬砖人员，目的是能让新人快速上手音频录制与处理。文中使用的示例音频，如没有特别说明皆属于风蓝动漫社内部资料，未经社团与演唱者本人许可禁止转载与再次利用。由于本人不是专业人员，如果发现了任何缺漏与错误还请不要客气直接指出来。</p>
+<p>整个教程中将会使用 Adobe Audition，具体版本为 CC 2017，因为其功能范围广，而可用性足够处理社团活动。</p>
+<h1><a id="_6"></a>基础前置知识</h1>
+<p><span id="more-2528"></span><br />
+    教程假定读者对以下内容有基本的了解：</p>
+<ul>
+<li>描述一段音频的基础术语（如声道、响度、低中高频、喷麦、齿音等）</li>
+<li>音频文件的基本参数（如码率、采样率、无损有损等）</li>
+<li>音频设备基本概念与工作流程（包括但不限于播放器、录音机、调音台等）</li>
+<li>Adobe Audition 的安装与设置（包括但不限于调整视图、安装插件、修改语言等）</li>
+</ul>
+<h1><a id="_16"></a>初步处理</h1>
+<p>这一块主要是进行最基本的响度与动态处理，一般而言，只要还有人力进行音频处理，就必须要做完这些事情。</p>
+<h3><a id="_20"></a>承前</h3>
+<p>看到这里时，通常你已经把声音录制完成，准备制作音轨了。除了必要的软硬件，你的手里此时应该有以下几样东西：</p>
+<ul>
+<li>活动全程的话筒干音文件</li>
+<li>其他录制来源的活动全程音频文件（比如来自调音台整轨输出的音频、原始视频文件的录制音轨、特别录制的观众席应援席音频等）</li>
+<li>演出用的伴奏音乐</li>
+<li>演出活动节目单</li>
+</ul>
+<p>如果时间的确相当紧迫，可以考虑仅使用整轨音频和视频音频进行最终制轨，此时可以跳过前两阶段直接进行最终处理。</p>
+<h3><a id="_31"></a>干音标记与切割</h3>
+<p>打开话筒干音文件，应该会看到类似这样的界面：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_1.png?ssl=1" alt="1_1.jpg" data-recalc-dims="1" /><br />
+根据节目单，对于每个要处理干音的节目（时间不充裕的情况下不处理主持人与中场活动等内容，同时这一步处理纯舞蹈节目也是没有意义的）进行切割。具体操作如下：</p>
+<p>用鼠标选定节目范围（从对轨提示音起，到主持人进行下一个节目报幕前止），按 <kbd>M</kbd> 键标记范围。为了方便，你可以修改一下标签名字，只需要按 <kbd>/</kbd>， 左侧有一个面板会切换到标签选项卡，并且已经选中待修改的标签名，在对应位置输入新名字即可。<br />
+接下来右键选中范围，选择 <em>复制到新建</em> 。这么操作的理由有二：把每段干音单独保存为文件便于管理；同时由于进行了标记，处理完后可以直接与原始干音文件标签对照，减小对轨工作量。如果一切顺利，效果应该如下图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_2.png?ssl=1" alt="1_2.jpg" data-recalc-dims="1" /></p>
+<p>如果发现快捷键不生效，并且自己没有修改过快捷键，则通常是没有切换到英文输入法导致的。</p>
+<p>将所有要处理干音的节目标记与提取出来后，将干音文件另存为以保留标记，同时将复制出来的各片段另存为。这些操作完成后，就可以把全程干音文件关闭。直到最终制轨前，所有操作都是在一个个复制出来的节目干音文件上进行的，后文不再强调。</p>
+<h3><a id="_48"></a>声道调整</h3>
+<p>由于我们的录音方式的特殊性，一个正常的干音文件的左右声道分属不同的一个或多个话筒。原则上，在最终制轨时，每个话筒有属于自己的轨道。因此，我们需要把声道单独提取出来，具体操作如下：</p>
+<p>在左上角的文件选项卡中双击当前处理的节目干音文件，然后右击选择 <em>提取声道到单声道文件</em> 。文件列表会多出两个文件，这两个文件是需要保存的，为了方便以后管理，最好将自动生成的文件名修改为有意义的名字，以后所有的处理都在这些单声道文件上进行。如果一切顺利，效果如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_3.png?ssl=1" alt="1_3.jpg" data-recalc-dims="1" /></p>
+<p>当然，不是所有节目都用到了全部话筒，如果有的声道对节目并没有用处，可以把对应单声道文件删除。原则上来说，现阶段不按声道分离可以方便后面处理啸叫，但考虑到处理啸叫并不是个很困难的事，同时不同话筒拾音情况也不同，因此这里仍然先分开处理。</p>
+<h3><a id="_58"></a>响度标准化</h3>
+<p>先是一段马后炮：</p>
+<blockquote><p>这一步实际上只是试图挽救录音与演出时的错误，如果录音时设置不当，很可能会出现部分片段演唱者的声音过大以至于录音设备无法完整记录下足够的动态范围的问题，此时听觉效果很差，而且后期无法修复。一旦出现这种情况就自求多福吧。相比之下，录制声音偏小虽然也没有充分利用设备的动态范围能力，但至少避免了前者在高音量时的严重失真（很明显听者对高音量部分的关注度更高），而且人声的动态范围需求其实不高。因此，即使事先与演唱者进行了说明，也应该将录制音量在测试结果的基础上适当减小。</p></blockquote>
+<p>下面是具体操作：将音频全选，然后选择 <em>收藏夹 -&gt; 标准化为 -0.1dB</em>，前后对比如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_4.png?ssl=1" alt="1_4.jpg" data-recalc-dims="1" /><br />
+<img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_5.png?ssl=1" alt="1_5.jpg" data-recalc-dims="1" /></p>
+<p>如果 <em>收藏夹</em> 内找不到这个快捷效果的话，点击 <em>效果 &#8211; 振幅与压限 &#8211; 标准化 (处理)</em> ，在弹出的对话框中进行如下图的设置：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_6.png?ssl=1" alt="1_6.jpg" data-recalc-dims="1" /></p>
+<p>以上就是进行正式处理前的全部准备工作。</p>
+<h3><a id="_75"></a>动态压缩与扩展</h3>
+<p>由于我们录制方式的特殊性，话筒干音没有经过调音台的处理直接进入我们的录音设备，因此动态范围比演出现场要高，但同时话筒本身也会拾取到小部分现场声音，因此我们既需要减少背景音扩展人声，同时还需要对人声进行动态压缩。比较方便的是，Audition 自带的 <em>动态处理</em> 效果器能同时完成这两个任务。进行后面的操作前，我们先切换一下布局方便操作：点击 <em>窗口 &#8211; 工作区 &#8211; 母带处理与分析</em>，如果一切顺利效果如下图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_7.png?ssl=1" alt="1_7.jpg" data-recalc-dims="1" /></p>
+<p>先打开这个效果器：点击 <em>效果 &#8211; 振幅与压限 &#8211; 动态处理</em> ，如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_8.png?ssl=1" alt="1_8.jpg" data-recalc-dims="1" /></p>
+<p>横轴为处理前的响度，纵轴为效果器处理后的响度，对应关系由那根折线/曲线决定。</p>
+<blockquote><p>如果这让你想起 Photoshop 等工具里的色彩曲线的话，那就太好了：这俩某种意义上是一回事，只是这里指的强度不是颜色而是声音。</p></blockquote>
+<p>一般而言，你可以在几个预设里选择比较顺眼几个，然后微调曲线，在回放确认听感没有问题后，可以点击 <em>动态处理</em> 窗口的设置选项卡，适当增大 <em>增益处理器</em> 的 <em>输出增益</em> 来补偿压缩过程中损失的响度，当然要注意不要补偿过度导致最后结果“爆范围”。如果你对压缩器有所了解的话，当然可以试着调一下其他参数，具体各个参数的意义网上有大量教程，就不赘述了。</p>
+<blockquote><p>需要注意到，分贝是对数单位，同时 3dB 对应着两倍功率（大约1.414倍振幅），所以对于大多数 ACG 歌曲，人声的动态范围其实是很狭小的。</p></blockquote>
+<p>比如图中的音频我是这么这么调的：<br />
+<img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_9.png?ssl=1" alt="1_9.jpg" data-recalc-dims="1" /></p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/1_9_b.png?ssl=1" alt="1_9_b.jpg" data-recalc-dims="1" /></p>
+<p>可以看到，相比于处理前，人声的动态范围被缩小了，同时背景音也处理掉了一些（有些不那么小的背景音反而被放大了，这是为了保持人声听感的协调带来的结果）。</p>
+<blockquote><p>最后制轨时的对齐问题：由于我们在前期削减乃至消除了背景伴奏音，所以完全依赖原始音频进行对齐。至于处理前后的音频之间如何对齐，我们可以靠之前划定的标签来快速完成。</p></blockquote>
+<p>在一切都调整好后，点击 <em>应用</em> 完成处理。这样，我们就完成了初步处理，如果没有时间与精力，可以考虑跳过细节处理，直接进行最终制轨。</p>
+<h1><a id="_103"></a>细节处理</h1>
+<p>这一块内容，需要读者反复聆听音频并往复修改参数，也是最为耗时费力的环节，但处理得当的话能够锦上添花，达到比现场更好的效果。</p>
+<blockquote><p>说是细节处理，其实也只是精修中最容易的那些。</p></blockquote>
+<h3><a id="_109"></a>喷麦修复</h3>
+<p>首先，如果发生这样的事情，负责录制的人是要负责的：修复喷麦最好的办法是录制时用防喷罩或防喷海绵等工具把喷麦消灭在源头。</p>
+<blockquote><p>当然，你都看到这里了，肯定已经录完了，马后炮再强也解决不了眼下问题。</p></blockquote>
+<p>对于喷麦，细分的话有两种形式：第一种是简单的“咚咚”声，第二种除了少量“咚咚”声还带有大量气流声。在频谱图上表现如下：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_1.png?ssl=1" alt="2_1.jpg" data-recalc-dims="1" /></p>
+<p>前者为第一种，后者自然是第二种（其实两者的区别仅在于气流作用时间长短）。我们在这里简单修复两者的方法是一样的： 点击 <em>污点修复画笔工具</em> ，在频谱图上对这些地方一个个涂抹。如果一切顺利的话，应该能够自动消除掉第一种喷麦与第二种喷麦的主要部分。效果如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_2_a.png?ssl=1" alt="2_2_a.jpg" data-recalc-dims="1" /></p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_2_b.png?ssl=1" alt="2_2_b.jpg" data-recalc-dims="1" /></p>
+<p>如果使用画笔工具也不能解决问题，可以考虑手动削减：使用选择工具，在频谱图中选定喷麦的主要部分，在鼠标附近会弹出一个 <em>调整振幅</em> 的小浮窗，反复调节里面的数值与选定的范围，直到取得满意的效果。</p>
+<blockquote><p>一种偷懒的办法是：去掉 100Hz 以下的声音，缺点在于喷麦不局限于 100Hz，一刀切会让听感变得很奇怪。</p></blockquote>
+<p>注意：即使使用自动修复工具，也一定要听一遍结果，避免出现一些奇怪的结果。</p>
+<blockquote><p>通常在修复完后，全音频的振幅图将发生很大的变化，振幅图上许多尖峰将会大幅减小乃至消失，当初进行的响度标准化会失去意义，考虑到本文目标读者，将这一步放在响度标准化之后。如果有时间进行喷麦修复的话，可以将修复喷麦提前到响度标准化之前。</p></blockquote>
+<h3><a id="_133"></a>啸叫修复</h3>
+<p>先认识一下啸叫在频谱图长啥样：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_3.png?ssl=1" alt="2_3.jpg" data-recalc-dims="1" /></p>
+<p>这是偏低频的啸叫，通常较高频率的啸叫在频谱图中表现为一根水平的细亮线。</p>
+<blockquote><p>实际上，一处啸叫不只一个频率，但一般主要集中在一个频率附近（不一定是基频）</p></blockquote>
+<p>Audition 提供了现成的工具进行修复，但需要人手动提供啸叫的相关参数，这个可以通过工作区右上方的频率分析窗口得到，在频谱图上选中啸叫对应的“亮线”，拖动播放游标，观察对应频谱和频率值，效果如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_4.png?ssl=1" alt="2_4.jpg" data-recalc-dims="1" /></p>
+<p>得到频率后打开修复工具，首先选中发生啸叫的片段，点击 <em>效果 &#8211; 降噪 /恢复 &#8211; 消除嗡嗡声</em> 。在弹出的窗口内填入之前得到的频率，并尽可能增大 <em>Q值</em> 与 <em>增益</em>（记得这里是负值！），由于之前提到的原因，谐波数这一功能不够好用，如果出现多频同时啸叫，可以考虑每个频率施加一次。修复后的效果如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_5.png?ssl=1" alt="2_5.jpg" data-recalc-dims="1" /></p>
+<p>可以发现绝大部分啸叫已经被去掉，一般而言不比背景杂音更响就足够了。</p>
+<h3><a id="_153"></a>过重齿音修复</h3>
+<p>过重的齿音与喷麦类似，但出现在频谱图的顶部。与低音不同，正常的人声是有一定量的高频声音（主要是一些辅音），所以修复时不能简单地用画笔自动修复，否则就会得到充满鼻音，含混不清的声音。这时主要依靠手动削减，具体削减的标准以振幅谱的尖刺为准。</p>
+<blockquote><p>实际操作中，不少需要修复的齿音不会高到成为音量的主要来源，这时主要受到个人审美与修复时所用监听设备的频率响应影响。在条件允许的情况下，尽可能使用有着均匀响应的设备进行回放，尽管大部分人不会关注，但终究会有人注意到这些。</p></blockquote>
+<h3><a id="_159"></a>跑调修复</h3>
+<blockquote><p>嘿嘿，嘿嘿。 ——沃·兹季朔德</p></blockquote>
+<p>这是最为痛苦与费时的地方，同时也是对读者乐理与审美要求最高的地方之一。一般而言，我们没有精力与能力去修复每一个音调不正确的地方，能将最刺耳的跑调修复掉就已是谢天谢地（全修掉的话，你就能靠这活挣口饭吃了）。具体来说，我们最多需要大致修复一段连续人声的开头与结尾出现的跑调。一方面听者容易察觉，另一方面修复起来较为容易，同时修复造成的失真也较低。</p>
+<p>以下图为例说明大致流程，第一张为演唱者干音，第二张为原唱音频：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_6.png?ssl=1" alt="2_6.jpg" data-recalc-dims="1" /> <img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_7.png?ssl=1" alt="2_7.jpg" data-recalc-dims="1" /></p>
+<p>可以发现，且不论音调是否正确（考虑到演唱者与原唱性别不同，这不成问题），演唱者头两个音在往下走，而原唱是往上升了大约一个音阶，听感上十分刺耳。在这里，我们目标是大致修改成相对音调准确。</p>
+<blockquote><p>很明显，具体修复流程不可能放之四海而皆准的，这里只是个粗糙的示例。</p></blockquote>
+<p>首先选中待修复区域末尾左右的一小段，使用 <em>效果 &#8211; 振幅与压限 &#8211; 淡化包络（处理）</em> ，通过修改振幅图上的曲线把要修复的片段与后续音频平滑隔离。具体操作如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_8.png?ssl=1" alt="2_8.jpg" data-recalc-dims="1" /></p>
+<p>接下来根据振幅图，大致划分出两个音的分界线，方便具体操作。打开 <em>效果 &#8211; 时间与变调 &#8211; 手动音调更正（处理）</em>，具体界面如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_9.png?ssl=1" alt="2_9.jpg" data-recalc-dims="1" /></p>
+<p>很幸运的是，由于之前消除杂音的工作比较到位，效果器给出了大致正确的音调图，我们的工作量减少了不少（这也是为什么把这个放在最后的原因之一）。调节完曲线后效果大致如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_10.png?ssl=1" alt="2_10.jpg" data-recalc-dims="1" /></p>
+<p>接下来点击 <em>应用</em> 。处理完毕后，游标从后往前选定把之前围住的部分复制出来，然后点击左下角历史纪录栏，将刚才的变调操作撤回（这个工具对全音频生效，即使设置为不变调也会有影响），把复制出来的部分混合式粘贴覆盖回去，就得到修剪后的结果，效果如图：</p>
+<p><img decoding="async" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2018/10/2_11.png?ssl=1" alt="2_11.jpg" data-recalc-dims="1" /></p>
+<p>可以看到，相比之前有明显改善，但开头仍有一段与原唱不符，如果要继续调整，可以多次使用，或者考虑其他变调工具。</p>
+<h3><a id="EQ_192"></a>EQ</h3>
+<p>对于干音，调整 EQ 有两个用途：弥补话筒等录音设备频率响应的缺陷与美化演唱者音色。一般认为，增强 100Hz 附近以上，500Hz 附近以下的响度可以使声音变得厚重，增强 1500Hz 到 3500Hz 左右的响度可以使声音变得明亮，一般认为700Hz到1200Hz左右不适合进行额外增强。</p>
+<p>以上就是制作总轨前的干音处理需要做的全部事项，制作总轨的教程以后会出。（flag</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2528/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2528</post-id>	</item>
+		<item>
+		<title>12月4日，萌歌会邀你一起来high</title>
+		<link>/second-wordpress-site/2210</link>
+					<comments>/second-wordpress-site/2210#comments</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Sun, 04 Dec 2016 02:33:32 +0000</pubDate>
+				<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[活动相关]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2210</guid>
+
+					<description><![CDATA[各位小伙伴们，第十四届社团文化节系列之“萌歌会”马上就要来了，这是一场音乐的盛宴哟~由共青团华中科技大学委员会 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>各位小伙伴们，第十四届社团文化节系列之“萌歌会”马上就要来了，这是一场音乐的盛宴哟~由共青团华中科技大学委员会、华中科技大学学生社团联合会共同主办，华中科技大学风蓝动漫社承办的大型活动。</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2211" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=1359%2C1920&#038;ssl=1" alt="%e8%90%8c%e6%ad%8c%e4%bc%9a%e5%b0%81%e9%9d%a2" width="1359" height="1920" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?w=1359&amp;ssl=1 1359w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=106%2C150&amp;ssl=1 106w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=212%2C300&amp;ssl=1 212w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=768%2C1085&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=725%2C1024&amp;ssl=1 725w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/12/萌歌会封面.jpg?resize=705%2C996&amp;ssl=1 705w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></p>
+<p>这里是时间和地点</p>
+<p class=""><span style="color: #ff0000;">  时间：12月4日 周日晚7点</span></p>
+<p class=""><span style="color: #ff0000;">  地点：东四俱乐部（原东四食堂）三楼</span></p>
+<p class="">  这里有会唱歌跳舞的小姐姐们（以及小哥们），有精心编排的舞台剧，更是有观众互动环节的神秘大礼。这是一场视觉和听觉的盛宴，是能放松全身心的一种体验，小伙伴们还在想什么，赶快加入进来吧~</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2210/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2210</post-id>	</item>
+		<item>
+		<title>【日在风蓝·技术组】bb 的音频后期教室（一）</title>
+		<link>/second-wordpress-site/2203</link>
+					<comments>/second-wordpress-site/2203#respond</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Fri, 25 Nov 2016 18:48:50 +0000</pubDate>
+				<category><![CDATA[“日在风蓝”]]></category>
+		<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[技术组]]></category>
+		<category><![CDATA[教程]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2203</guid>
+
+					<description><![CDATA[大家好！在5天的 lag 后，由技术组组长 bb 挖开的大坑终于迎来第一个部分的内容。这里我将用到的是一个轻量 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>大家好！在5天的 lag 后，由技术组组长 bb 挖开的大坑终于迎来第一个部分的内容。这里我将用到的是一个轻量级的 DAW—— REAPER，与重量级的 Audition 和 Cubase 相比，REAPER 可以免费使用，而且功能也能够满足例如翻唱等一般性任务的后期需求。</p>
+<p>与一般教程的以功能为顺序介绍不同，这里以翻唱一首歌为例子介绍 REAPER 乃至一般 DAW 的使用方法，或许会更实用一些。我在这方面的经验还很有限，有什么不妥的地方欢迎指出。</p>
+<p><span id="more-2203"></span></p>
+<h2>一、软件的下载、安装、以及最初的配置</h2>
+<p><a href="http://www.reaper.fm/download.php">软件的官方下载地址</a>，建议下载32位版，因为 VST 插件以32位版居多，64位版对于32位的VST插件支持稳定性可能会差一些。</p>
+<p>安装完成后，首先下载 MP3 的编解码器。&nbsp;<a href="https://pan.baidu.com/s/1o8PgtKI">度盘链接</a>&nbsp;按照你所选择的版本下载 lame_enc.dll 到 REAPER 的安装目录下。</p>
+<div id="id10" class="section">
+<h3>软件设置</h3>
+<div id="id11" class="section">
+<h4>工程自动备份</h4>
+<p>主菜单 -&gt; 选项 -&gt; 首选项 -&gt; 工程，设置如图所示：</p>
+<div class="figure"><img decoding="async" class="" src="https://i0.wp.com/reaper.loscomet.com/images/ProjectBackup.png?resize=500%2C359" alt="工程备份设置" width="500" height="359"  data-recalc-dims="1"></div>
+<p>这样，在你的工程目录下，就会定期地自动备份一些名为 *.rpp-bak 的文件。万一 REAPER 崩溃，可以双击最新的那个 rpp-bak 文件打开，或者把它重命名为 *.RPP 文件，双击打开。</p>
+</div>
+<div id="vst" class="section">
+<h4>VST 路径</h4>
+<p>主菜单 -&gt; 选项 -&gt; 首选项 -&gt; 插件 -&gt; VST，设置如图所示：</p>
+<div class="figure"><img decoding="async" class="" src="https://i0.wp.com/reaper.loscomet.com/images/VSTSettings.png?resize=517%2C371" alt="VST设置" width="517" height="371"  data-recalc-dims="1"></div>
+<p>另外 <strong>永远不要把插件安装在中文路径下</strong> 。</p>
+</div>
+<div id="id12" class="section">
+<h4>禁用自动淡入淡出</h4>
+<p>REAPER 默认设置会自动给新创建的对象开头和结尾的地方加上一点点的淡入淡出，包括把对象切开的时候，切口的地方放大之后看起来是这个样子的：</p>
+<div class="figure"><img loading="lazy" decoding="async" class="" src="https://i0.wp.com/reaper.loscomet.com/images/ItemAutoFade.png?resize=341%2C160" alt="对象自动淡入淡出" width="341" height="160"  data-recalc-dims="1"></div>
+<p>个人觉得这个功能没什么用，有时候还不太方便，所以可以禁用掉，如图：</p>
+<div class="figure"><img loading="lazy" decoding="async" class="" src="https://i0.wp.com/reaper.loscomet.com/images/DisableAutoFade.png?resize=520%2C167" alt="禁用自动淡入淡出" width="520" height="167"  data-recalc-dims="1"></div>
+<div class="figure"></div>
+<h2 class="figure">二、新工程的准备工作</h2>
+<p>点击 【文件】—【新建工程】就可以创建一个新的工程文件，按 Ctrl+S 以保存到你想要的地方，之后你的自动保存功能就被启用了，如果不进行第一次保存操作是不能自动保存的。</p>
+<p>接下来你就会看到形似下图的界面：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/5838663d00e11.jpg?resize=463%2C404&#038;ssl=1" alt="" width="463" height="404"  data-recalc-dims="1"></p>
+<p>其中（1）是音轨控制面板，在这里可以控制各个音轨的全局参数以及它们的效果器；（2）是编排界面，我们一般在这里编辑音轨的具体内容；（3）是调音台</p>
+<div id="id14" class="section">
+<h3>禁用吸附</h3>
+<p>默认设置下，对象只能跟网格对齐，如果想要移动到任意位置，可以按住 Shift 拖动。或者禁用吸附：点击左上角工具栏中的“磁铁”图标，如图：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/DisableSnap.png" alt="禁用吸附" data-recalc-dims="1"></div>
+<div class="figure"></div>
+<h3 class="figure">调节 BPM 与节拍设置</h3>
+<div class="figure">接下来，我们需要修改工程的属性，按 Alt+Enter 打开工程的属性：</div>
+<div class="figure"><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/5838694045bed.jpg?resize=331%2C288&#038;ssl=1" alt="" width="331" height="288"  data-recalc-dims="1"></div>
+<div class="figure">首先将两个时间基准设置改为【时间】，然后将待处理曲子的 BPM 以及“拍子”参数填入【工程 BPM】与【时间记号】中，如果不知道前者的话可以用下面的方法得到（后者不知道的话自己对轨的时候就能看出来的嘛 ╮(╯▽╰)╭ ）。</div>
+<div class="figure">
+<p>另外，BPM 也可以在这里设置：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/BPMSetting.png" alt="BPM设置" data-recalc-dims="1"></div>
+</div>
+</div>
+<div id="id15" class="section">
+<blockquote><p>一定会有人问，这个有什么用呢？REAPER 里可以设置一首歌曲的节拍速度(BPM)，也就是每分钟的节拍数。新工程的默认速度是120，默认设置下，如果你修改了这个数值，你的媒体对象会随着这个修改而被拉伸或者缩短(这同样是一个方便编曲的设定)。设置了这个之后，就不会受 BPM 的影响。</p></blockquote>
+<h5>获得准确的 BPM 参数</h5>
+<p>可以使用 MixMeister BPM Analyzer（官方售价 4美刀，然而百度软件里有破解版） ，如果有正版洁癖的话，可以使用 foobar2000 的 BPM Analyser 插件。测出来的值可能会有些许偏差，这时就需要手动微调。首先把测出来的 BPM 输入到工程属性中，然后导入原曲（这里以樱花庄的ED2为例说明）。用 foobar2000 的插件测出 BPM 为137，修改工程的 BPM 参数为137后导入原曲：</p>
+<p>右击<strong><em>音轨控制面板</em></strong>添加音轨，然后将原曲文件拖入<strong><em>编排界面</em></strong>中新音轨对应位置：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583870ce61900.jpg?resize=335%2C289&#038;ssl=1" alt="" width="335" height="289"  data-recalc-dims="1"></p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583870d20e990.jpg?resize=456%2C128&#038;ssl=1" alt="" width="456" height="128"  data-recalc-dims="1"></p>
+<p>接下来找到波形较有规律的地方（通常是非高潮部分的纯乐器演奏（求能直接听出来的菊苣手下留情 QAQ ）），点击时间轴上的对应位置使指针的位置移过去（如果不小心选中了一段，按 ESC 键就能取消选择），滚动鼠标滚轮来适当放大：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583872fab42e2.jpg?resize=446%2C141&#038;ssl=1" alt="" width="446" height="141"  data-recalc-dims="1"></p>
+<p>波形较大的地方通常是节拍点，按下 Alt 键然后拖动这段媒体，使得时间轴的节拍基本与波形的大幅变化处相切（注意音频的开头有没有超出边界哦）：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583874067fe84.jpg?resize=374%2C165&#038;ssl=1" alt="" width="374" height="165"  data-recalc-dims="1"></p>
+<p>对齐后滚动滚轮略微缩小波形视图，看看后面波形是不是仍然保持与时间轴对齐，如果到后面音轨又逐渐跑飞的话，试着微调 BPM（一般以1为单位就行）。在我这个例子中实际的 BPM 为138，foobar2000 的插件有一点偏差。对齐的好处在上面已经提到了。</p>
+<blockquote><p>可能有的人会不大理解：用伴奏曲不是更容易对齐节拍吗？事情是这样的，我们在后面对轨的主要工作是把干音对齐到伴奏曲，而伴奏乐器的节拍点与人发声的时间点并不相同，如果直接按照伴奏乐器对齐，就有可能出现小节的开头处人声就已经发出一半的情况，对我们调节音轨十分不方便。</p></blockquote>
+<p>&nbsp;</p>
+<h3>导入并对齐伴奏</h3>
+<p>与 <strong>获得准确的 BPM 参数&nbsp;</strong>中导入原曲的方法类似，将伴奏曲导入到一个新音轨中：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/5838798fee9a4.jpg?resize=637%2C113&#038;ssl=1" alt="" width="637" height="113"  data-recalc-dims="1"></p>
+<p>如果两者的时间有差距的话，找到一个没有人声的位置，用上面提到的方法使伴奏对齐原曲（别反过来了！）：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/58387b6044fdf.jpg?resize=631%2C102&#038;ssl=1" alt="" width="631" height="102"  data-recalc-dims="1"></p>
+<p>现在试着按空格播放一下，如果没有出现声音变模糊的现象（如果有就说明还是没有完全对齐（要是听到的还是重重叠叠的声音那就还差得远 = =||）），那就已经完成了伴奏的对齐工作。</p>
+<blockquote><p>如果你用的不是官方的伴奏曲，那么你会至少遇到两个问题：1、波形与原曲没有相似性，这点可以通过上面提过的观察是否相切的办法对齐；2、音量与原曲不一致，这点可以通过后面将提到的标准化处理来弥补。如果你的伴奏的速率与原曲不一致乃至伴奏也是未处理过的话，那就需要先对伴奏进行修正。</p></blockquote>
+<h3>导入以及预处理人声</h3>
+<p>再新建音轨并导入干音（图中的干音已经加了一些预处理）：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/58387e459560d.jpg?resize=632%2C121&#038;ssl=1" alt="" width="632" height="121"  data-recalc-dims="1"></p>
+<p>刚导入的干音有以下几个整体性的问题需要解决：</p>
+<ol>
+<li>音量偏大或偏小</li>
+<li>环境背景以及录制设备带来的噪音（录制过程的偶发性噪音在后面进行处理）</li>
+</ol>
+<p>先处理第一个问题：</p>
+<h4>调整干音的整体音量</h4>
+<p>在编排界面中右击干音，选择【对象属性】：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583881cca8ccc.jpg?resize=407%2C121&#038;ssl=1" alt="" width="407" height="121"  data-recalc-dims="1"></p>
+<p>在弹出的窗口中点击【标准化】后点击底部的确定：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/5838827e406dd.jpg?resize=310%2C465&#038;ssl=1" alt="" width="310" height="465"  data-recalc-dims="1"></p>
+<p>一般情况下，这时的干音音量已经变为正常大小。如果认为还需要调节，把鼠标放在对象的上边缘，会变成上下箭头的形状，往下拖动，音量会减小——等等，不是提升么？往上拖动不管用啊？这时候只要按住 <strong>Shift</strong> 再往上拖，就可以提高音量了，如图：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/AdjustVolume.gif" alt="按住 Shift 拖动上边缘调整音量" data-recalc-dims="1"></div>
+<div class="figure">调整好后第一个问题就算是解决了。</div>
+<p>对于第二个问题，我们在这里可以使用 REAPER 自带的 VST 插件 ReaFir 进行处理</p>
+<h4>消除干音的整体性噪音</h4>
+<blockquote><p>任何降噪插件，都建议挂在干声轨的第一个位置，ReaFir 也不例外。</p>
+<p>为什么呢？比如你在降噪插件之前挂了个EQ，你采样过的噪声特征是经过EQ处理了的，后来你又重新调了一下EQ，然后新的噪声特征就跟采样到的特征不一样了，降噪效果就下降了。再比如你在降噪之前挂了个压缩，底噪部分电平比较低，达不到压缩器的 threshold，采样到的噪声特征是未经压缩处理的，人声的部分被压缩了，噪声的电平也变小了，这样再用采样到的特征去降噪，可能会降噪太多导致失真。总之，<strong>请把 ReaFir 放在效果链的第一位</strong>。另外，如果你在采样完之后，需要调整干声的音量大小（拖动干声对象上边缘，不是音轨上的推子），那么你需要在调整完之后重新采样。</p></blockquote>
+<p>看到<strong><em>音轨控制面板</em></strong>中干音对应的音轨，点击【FX】按钮（图中为启用 FX 的效果），会弹出一个窗口，选择 ReaFir并点击【确定】：</p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/583883f182463.jpg?resize=460%2C64&#038;ssl=1" alt="" width="460" height="64"  data-recalc-dims="1"></p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/58388478f3968.jpg?resize=431%2C337&#038;ssl=1" alt="" width="431" height="337"  data-recalc-dims="1"></p>
+<p><img loading="lazy" decoding="async" class="alignnone " src="https://i0.wp.com/ooo.0o0.ooo/2016/11/25/58388591aa23a.jpg?resize=505%2C309&#038;ssl=1" alt="" width="505" height="309"  data-recalc-dims="1"></p>
+<div id="id3" class="section">
+<p>点 Mode 下拉框，可以看到 ReaFir 有好几种模式(如图)。通过这些模式，你可以让它变成一个线性相位(Linear-phase)的均衡器，或者多段门限，或者多段压缩等。而降噪要用到的，是它的 <strong>Subtract</strong> (减法) 模式。</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/ReaFirModes.png" alt="ReaFir的模式" data-recalc-dims="1"></div>
+</div>
+<div id="id4" class="section">
+<p>选好模式之后，和其它常见的降噪插件一样，首先要做的是对噪声进行采样。采样之前，先把 FFT Size 调大一些，建议 16384 或者 32768，数值越大，精度越高，但 CPU 占用也越高。然后选中 <strong>Automatically build noise profle (enable during noise)</strong> 如图：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/ReaFirBuildNoiseProfile.png" alt="噪声采样" data-recalc-dims="1"></div>
+<p>然后你就可以找一段底噪来采样了。底噪最好符合如下条件：</p>
+<ol class="arabic simple">
+<li>长度至少2秒；</li>
+<li>不包含除背景噪声或者电流声之外的其它人为声音（例如鼠标声、呼吸声）—— 是的，不要觉得你采样到了鼠标声，降噪就能给你降掉干音里的鼠标声，它只会让你的噪声采样变糟，让降噪完的声音失真更多。</li>
+</ol>
+<p>总之，采样需要几秒钟比较纯粹比较均匀的底噪，所以 <strong>录音的时候，一定要录几秒空白的底噪，把干声交给别人做后期之前，也不要自作聪明把那些空白处的噪声删掉</strong> 。</p>
+<p>找到要采样的底噪之后，把播放光标定位到底噪开始的部分，如图：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/ReaFirNoise.png" alt="底噪" data-recalc-dims="1"></div>
+<p>点 REAPER 的播放按钮（或者按键盘的空格键）开始播放噪声，你可以看到 ReaFir 里的红线会发生变化，这就是底噪的特征，如图：</p>
+<div class="figure"><img decoding="async" src="https://i0.wp.com/reaper.loscomet.com/images/ReaFirNoiseProfile.png" alt="底噪特征" data-recalc-dims="1"></div>
+<p>播放大概几秒钟之后，停止播放（如果不小心播放到了有人声的部分，可以先把 Automatically 前面按个对勾点掉，然后重新勾选，再来一次），然后把 Automatically 前面的对勾点掉，就完成了，现在 ReaFir 就变成一个降噪器了。播放一下底噪和人声部分听一下，是不是噪声基本上听不到了？</p>
+<p>如果你对降噪的幅度不大满意，可以按住键盘上的 Ctrl 键，然后鼠标在频谱区域上下拖动，可以整体移动红线，往上移，降噪幅度大，同时失真也会变大，往下移，降噪程度会降低，但是失真也会变小。通常来说，采样之后直接降噪的效果已经不错，一般不需要移动这个。</p>
+<blockquote><p>下面是一些更专业的降噪插件：</p>
+<ul class="simple">
+<li>Waves x-noise/z-noise</li>
+<li>iZotope RX</li>
+<li>Wave Arts Master Restoration</li>
+</ul>
+</blockquote>
+</div>
+<p>现在我们就完成了最基本的准备，下一次内容我们就真正地开始混音工作了。（咕咕咕</p>
+</div>
+</div>
+</div>
+<div id="id13" class="section"></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2203/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2203</post-id>	</item>
+		<item>
+		<title>【日在风蓝·技术组】MAD视频制作入门</title>
+		<link>/second-wordpress-site/2159</link>
+					<comments>/second-wordpress-site/2159#comments</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Mon, 31 Oct 2016 14:28:26 +0000</pubDate>
+				<category><![CDATA[“日在风蓝”]]></category>
+		<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[技术组]]></category>
+		<category><![CDATA[教程]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2159</guid>
+
+					<description><![CDATA[各位好，这里是技术组的ppt123。说到ACG圈子里的同人，就不能不提MAD。以下是百度百科对MAD的定义：  [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>各位好，这里是技术组的ppt123。说到ACG圈子里的同人，就不能不提MAD。以下是百度百科对MAD的定义：<br />
+MAD（マッド-），指电玩文化、动漫文化、同人文化界别中的多媒体作品。一般作品为一段有关的影片剪辑，配以作者喜欢的音乐，近似同人MV 形式的存在。不同的地方是MAD片的重点在于影片，对有关动画或电玩致敬，而相对同人MV的重点则放在音乐之上。有一些是只作声音的剪辑或只有画面的剪辑亦可算作MAD。<br />
+MAD根据素材分类往往分为动画系MAD和静止系MAD。动画系MAD通常也称AMV（Anime Music Video），是由一个或几个动画组成，并搭配一首歌曲的短片。素材主要来自于源动画的剪辑和拼凑，从技术难度来说较为简单。静止系MAD的素材往往来源于静止的图片，通过制作人的脑洞加以特效使静止的图片具有动画的感觉，通常需要制作人具有足够的想象力和对相关特效软件的熟悉程度，入门门槛较高，不过往往可以作为实力的证明，有些人将AMV单列出来，与静止系MAD分开，称“静止系MAD才是真正的MAD”。</p>
+<p><span id="more-2159"></span><br />
+这里给一个静止系MAD和AMV的实例 ：<br />
+静止系MAD（大老师）：<br />
+<a href="http://www.bilibili.com/video/av1798602/">http://www.bilibili.com/video/av1798602/</a><br />
+AMV（还是大老师）：<br />
+<a href="http://www.bilibili.com/video/av811684/">http://www.bilibili.com/video/av811684/</a><br />
+制作MAD的软件，比较常用的就是Adobe公司的After Effect（后称AE）和Premiere Pro（后称PR），前者是一款特效制作软件，用于实现制作人的各种脑洞，而后者则是视频剪辑软件，用来剪辑素材以及进行最后的视频合成。除此之外，由于MAD还需要对图片和声音素材进行加工，掌握Adobe的另外两款软件Audition和Photoshop也非常的重要。而且，后期还要遇到视频压制的问题，所以还需要制作人对压制（AVS）等知识有一定的认识并可以熟练操作，这方面的内容，之前潘达聚聚有在日在风蓝分享过（<a href="/second-wordpress-site/1711">/second-wordpress-site/1711</a>），这里就不再赘述了。<br />
+本文所有Adobe软件CC 2015版本及破解包下载地址：<br />
+链接：http://pan.baidu.com/s/1jIfQ2zW 密码：nmyv<br />
+先来说说AMV的制作，需要用到的就是premiere软件。打开premiere，选择新建项目，常规选项卡默认即可，其余选项如下图</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2166" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.png?resize=529%2C593&#038;ssl=1" alt="01" width="529" height="593" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.png?w=529&amp;ssl=1 529w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.png?resize=134%2C150&amp;ssl=1 134w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.png?resize=268%2C300&amp;ssl=1 268w" sizes="(max-width: 529px) 100vw, 529px" data-recalc-dims="1" /></p>
+<p>暂存盘主要用来存储一些缓存文件，建议位置尽量选在空余空间比较大的磁盘，设置完毕后点击确定，进入PR的主界面。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2167" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=1366%2C728&#038;ssl=1" alt="02" width="1366" height="728" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?w=1366&amp;ssl=1 1366w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=150%2C80&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=300%2C160&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=768%2C409&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=1024%2C546&amp;ssl=1 1024w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.png?resize=705%2C376&amp;ssl=1 705w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></p>
+<p>我们可以看到PR的四个工作区，左上为素材配置区，右上为总预览区，左下为素材区，右下为时间轴区。我们首先导入素材，文件→导入，导入你的素材文件，作为实例我导入一个动画和一段音乐。<br />
+我们可以看到左下角的素材区出现了刚刚导入的动画和音乐</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2168" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.png?resize=353%2C264&#038;ssl=1" alt="03" width="353" height="264" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.png?w=353&amp;ssl=1 353w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.png?resize=150%2C112&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.png?resize=300%2C224&amp;ssl=1 300w" sizes="(max-width: 353px) 100vw, 353px" data-recalc-dims="1" /></p>
+<p>可以将视频素材拖到时间轴区，PR就会自动根据你的视频素材的参数创建序列，这时我们看到时间轴是这样的。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2169" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?resize=899%2C260&#038;ssl=1" alt="04" width="899" height="260" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?w=899&amp;ssl=1 899w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?resize=150%2C43&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?resize=300%2C87&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?resize=768%2C222&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.png?resize=705%2C204&amp;ssl=1 705w" sizes="(max-width: 899px) 100vw, 899px" data-recalc-dims="1" /></p>
+<p>同时，右上角的预览区会显示当前帧所在的视频画面。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2170" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.png?resize=679%2C375&#038;ssl=1" alt="05" width="679" height="375" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.png?w=679&amp;ssl=1 679w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.png?resize=150%2C83&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.png?resize=300%2C166&amp;ssl=1 300w" sizes="(max-width: 679px) 100vw, 679px" data-recalc-dims="1" /></p>
+<p>如果我们要截取视频中的一段，比如我们要截取白箱第一集00:04:21:13(以上四个数字分别是小时，分钟，秒，帧)- 00:04:24:20的甜甜圈部分，我们就将时间轴放在开始和结尾处（请注意，这里要确定到帧。要找到确定的帧，可以通过键盘上的左右键对帧进行细微的查找），使用 （裁刀工具）将视频截成三段，最后效果如图</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2171" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?resize=900%2C261&#038;ssl=1" alt="06" width="900" height="261" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?w=900&amp;ssl=1 900w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?resize=150%2C44&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?resize=300%2C87&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?resize=768%2C223&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.png?resize=705%2C204&amp;ssl=1 705w" sizes="(max-width: 900px) 100vw, 900px" data-recalc-dims="1" /></p>
+<p>然后将前后两端删掉，只保留中间的截取部分，这样，我们想要的部分就截好了。<br />
+同时pr还有一些预设的转场效果可以直接拿来用在两个视频片段之间，非常的方便，在左下角素材区的“效果”选项卡下</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2172" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/07.png?resize=351%2C265&#038;ssl=1" alt="07" width="351" height="265" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/07.png?w=351&amp;ssl=1 351w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/07.png?resize=150%2C113&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/07.png?resize=300%2C226&amp;ssl=1 300w" sizes="(max-width: 351px) 100vw, 351px" data-recalc-dims="1" /></p>
+<p>可以直接将里面的效果拉到两个视频素材相邻的地方即可。<br />
+同时，我们需要把视频素材的音效换掉，换成我们自己的音乐。首先要右键点击视频素材，选择“取消视音频链接”（翻译不同，还有一种翻译是“取消链接”），这样一来，原来绑定在一起的视频和音频就会分离，我们就可以将音频按delete删去，然后在相同位置替换成我们自己喜欢的音乐。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2173" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?resize=897%2C261&#038;ssl=1" alt="08" width="897" height="261" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?w=897&amp;ssl=1 897w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?resize=150%2C44&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?resize=300%2C87&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?resize=768%2C223&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/08.png?resize=705%2C205&amp;ssl=1 705w" sizes="(max-width: 897px) 100vw, 897px" data-recalc-dims="1" /></p>
+<p>在制作完毕后，需要对视频文件进行渲染输出，文件→导出→媒体，然后选择自己需要的格式导出就可以了。<br />
+以上就是premiere最简单的运用，平时我们英语课之类的小视频制作基本知道这些就可以轻松应对了。<br />
+接下来再来说说AE。不论是在AMV还是静止MAD，AE都会是一个很专业的选择。PR里面的预设转场效果和其他效果显然不全适用于我们的想法，而且也很low。如果真的要发挥自己的脑洞，AE显然是个更好的选择。不过AE的教程显然不适合以文字的形式呈现给大家，我这里就给大家推荐一个入门教程（其实主要还是我自己懒得录）。玄月子的MAD AE入门教程，一共6个，我觉得讲的非常到位，很建议大家看完之后自己着手做一下，这对于自己的入门有很大的帮助。<br />
+链接：http://pan.baidu.com/s/1gf4ZcTt 密码：hwvs<br />
+以上，简单地介绍了两个常用的MAD制作软件。本文主要还是在于给大家一个入手的方向，具体的技术指导，可能还是需要有个师父给你进行相关的辅导。在技术组目前负责视频特效工作的有我（QQ：859133893），凶真（QQ：564759816），和退休的猪哥（QQ:1067323473）,如果真的对视频有兴趣的话欢迎和我们交流并加入技术组与我们一起工作探讨（群号：273193803）。除了师父领进门之外，自学也非常的重要。推荐我要自学网（www.51zxw.net）的AE和PR的入门教程，建议各位全部刷一遍，你就可以对这两个软件有一个入门的认识，然后可以去看一些高端的进阶教程，这里推荐几个网站：<br />
+<a href="http://www.lookae.com">http://www.lookae.com</a><br />
+百度MAD吧<br />
+<a href="http://www.videocopilot.net">http://www.videocopilot.net</a>（里面教程是英文的，也可以百度搜AK的AE教程，有字幕版）<br />
+同时，也可以平时看到喜欢的MAD（尤其是静止系），自己对里面的一些效果或者全片进行仿制，仿制的过程其实是对效果制作的积累，当你积累到一定程度，自己做片的时候也就能游刃有余了。<br />
+最后，就祝各位在MAD的道（da）路（keng）中越走越远吧！<br />
+PS:各位观众姥爷们一定会觉得意(sha)犹(dou)未(mei)尽(jiang)，一方面 MAD 的制作对软件操作的要求不是很高，另一方面 MAD 对艺术审美的要求反而比技术上的要求更高，而前者不是靠几个教程能解决的。在接下来的几期中，技术组组长 Apt-Init 会比较详细地介绍音频软件的使用方法，请各位期待哦。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2159/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2159</post-id>	</item>
+		<item>
+		<title>【日在风蓝·摄影组】雨中刷夜景的正确姿势</title>
+		<link>/second-wordpress-site/2141</link>
+					<comments>/second-wordpress-site/2141#respond</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Sat, 22 Oct 2016 16:57:52 +0000</pubDate>
+				<category><![CDATA[“日在风蓝”]]></category>
+		<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[摄影组]]></category>
+		<category><![CDATA[教程]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2141</guid>
+
+					<description><![CDATA[大家好！这里是风蓝摄影组灯光及后勤组组长透明。本次周报为大家带来的是摄影组扛把子的神无月dalao为cos组组 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>大家好！这里是风蓝摄影组灯光及后勤组组长透明。本次周报为大家带来的是摄影组扛把子的神无月dalao为cos组组长南休菊苣以及舞团团长鱼子菊苣拍摄的一次夜景。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full" src="https://i0.wp.com/ooo.0o0.ooo/2016/10/22/580b994d50f36.jpg?resize=4000%2C6000&#038;ssl=1" alt="" width="4000" height="6000" data-recalc-dims="1" /></p>
+<p><span id="more-2141"></span></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full" src="https://i0.wp.com/ooo.0o0.ooo/2016/10/22/580b994e1d04c.jpg?resize=4000%2C6000&#038;ssl=1" alt="" width="4000" height="6000" data-recalc-dims="1" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full" src="https://i0.wp.com/ooo.0o0.ooo/2016/10/22/580b994f06a8e.jpg?resize=3264%2C2176&#038;ssl=1" alt="" width="3264" height="2176" data-recalc-dims="1" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2147" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?resize=750%2C1125&#038;ssl=1" alt="dsc_0737" width="750" height="1125" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?w=750&amp;ssl=1 750w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?resize=100%2C150&amp;ssl=1 100w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?resize=200%2C300&amp;ssl=1 200w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?resize=683%2C1024&amp;ssl=1 683w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC_0737.jpg?resize=705%2C1058&amp;ssl=1 705w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-2146" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=3490%2C5319&#038;ssl=1" alt="3t1a0177" width="3490" height="5319" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?w=3490&amp;ssl=1 3490w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=98%2C150&amp;ssl=1 98w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=197%2C300&amp;ssl=1 197w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=768%2C1170&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=672%2C1024&amp;ssl=1 672w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?resize=705%2C1074&amp;ssl=1 705w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?w=2000&amp;ssl=1 2000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/3T1A0177.jpg?w=3000&amp;ssl=1 3000w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-2145" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=6000%2C4000&#038;ssl=1" alt="_dsc1873-1" width="6000" height="4000" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?w=6000&amp;ssl=1 6000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=150%2C100&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?resize=705%2C470&amp;ssl=1 705w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?w=2000&amp;ssl=1 2000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1873-1.jpg?w=3000&amp;ssl=1 3000w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-2144" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=4000%2C6000&#038;ssl=1" alt="_dsc1859-1" width="4000" height="6000" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?w=4000&amp;ssl=1 4000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=100%2C150&amp;ssl=1 100w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=200%2C300&amp;ssl=1 200w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=768%2C1152&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=683%2C1024&amp;ssl=1 683w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?resize=705%2C1058&amp;ssl=1 705w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?w=2000&amp;ssl=1 2000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1859-1.jpg?w=3000&amp;ssl=1 3000w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-2143" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=4000%2C6000&#038;ssl=1" alt="_dsc1844-1" width="4000" height="6000" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?w=4000&amp;ssl=1 4000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=100%2C150&amp;ssl=1 100w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=200%2C300&amp;ssl=1 200w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=768%2C1152&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=683%2C1024&amp;ssl=1 683w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?resize=705%2C1058&amp;ssl=1 705w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?w=2000&amp;ssl=1 2000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1844-1.jpg?w=3000&amp;ssl=1 3000w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-2142" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=4000%2C6000&#038;ssl=1" alt="_dsc1830-1" width="4000" height="6000" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?w=4000&amp;ssl=1 4000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=100%2C150&amp;ssl=1 100w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=200%2C300&amp;ssl=1 200w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=768%2C1152&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=683%2C1024&amp;ssl=1 683w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?resize=705%2C1058&amp;ssl=1 705w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?w=2000&amp;ssl=1 2000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/DSC1830-1.jpg?w=3000&amp;ssl=1 3000w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></p>
+<p>特别感谢团子dalao过来帮忙打光</p>
+<p>以上就是本次周报的所有内容了，欢迎更多的小姐姐约片_(:з)∠)_</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2141/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2141</post-id>	</item>
+		<item>
+		<title>【日在风蓝·技术组】使用搜索引擎的正♂确姿♂势</title>
+		<link>/second-wordpress-site/2102</link>
+					<comments>/second-wordpress-site/2102#respond</comments>
+		
+		<dc:creator><![CDATA[Aperture Initiative]]></dc:creator>
+		<pubDate>Mon, 10 Oct 2016 13:26:17 +0000</pubDate>
+				<category><![CDATA[“日在风蓝”]]></category>
+		<category><![CDATA[所有文章]]></category>
+		<category><![CDATA[技术组]]></category>
+		<category><![CDATA[教程]]></category>
+		<guid isPermaLink="false">/second-wordpress-site/?p=2102</guid>
+
+					<description><![CDATA[民那桑，这里是社团苦力先辈背锅的技术组日在风蓝栏目。（雅灭咯，我一只鸡怎么突然就成背锅的了，但是好哥哥说了，这 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>民那桑，这里是社团苦力先辈背锅的技术组日在风蓝栏目。（雅灭咯，我一只鸡怎么突然就成背锅的了，但是好哥哥说了，这个锅你来背，我当时就念了两句asdasdxgcbamnsdkhwqdsafgwe</p>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-2100 aligncenter" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.jpg?resize=288%2C300&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-01" width="288" height="300" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.jpg?resize=288%2C300&amp;ssl=1 288w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.jpg?resize=144%2C150&amp;ssl=1 144w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/01.jpg?w=600&amp;ssl=1 600w" sizes="(max-width: 288px) 100vw, 288px" data-recalc-dims="1" /></p>
+<p>本期日在风蓝，就由我来给大家普及一点关于搜索引擎的使用经验<span id="more-2102"></span></p>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-2103 aligncenter" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.jpg?resize=300%2C300&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-02" width="300" height="300" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/02.jpg?w=450&amp;ssl=1 450w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></p>
+<p>首先，解决一个根本性问题：为什么要科普搜索引擎的使用姿势？</p>
+<p>&nbsp;</p>
+<p>原因当然是百度一下真的会死啊，为了不让各位因为使用多年百度而不能建设社会主义留下遗憾，我作为一个社会主义接班人有义务为共和国未来的各位指明一条共同建设社会主义的康庄大道！</p>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-2104 aligncenter" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.jpg?resize=300%2C300&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-03" width="300" height="300" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/03.jpg?w=700&amp;ssl=1 700w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></p>
+<p>言归正传，正文开始</p>
+<p>&nbsp;</p>
+<h1>第一个问题，使用哪一款搜索引擎呢？</h1>
+<p>&nbsp;</p>
+<h2>鄙人推荐：第一梯队：<a href="http://www.google.com">Google</a>（谷歌）</h2>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-2105 size-full" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?resize=1000%2C462&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-04" width="1000" height="462" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?w=1000&amp;ssl=1 1000w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?resize=150%2C69&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?resize=300%2C139&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?resize=768%2C355&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/04.jpg?resize=500%2C231&amp;ssl=1 500w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></p>
+<h2>第二梯队：<a href="http://www.bing.com">Bing</a>（必应）、<a href="http://www.yahoo.com">Yahoo</a>（雅虎）</h2>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2106" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?resize=956%2C545&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-05" width="956" height="545" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?w=956&amp;ssl=1 956w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?resize=150%2C86&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?resize=300%2C171&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?resize=768%2C438&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/05.jpg?resize=500%2C285&amp;ssl=1 500w" sizes="(max-width: 956px) 100vw, 956px" data-recalc-dims="1" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2107" src="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=1225%2C664&#038;ssl=1" alt="技术组-日在风蓝-2016-2-01-06" width="1225" height="664" srcset="https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?w=1225&amp;ssl=1 1225w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=150%2C81&amp;ssl=1 150w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=300%2C163&amp;ssl=1 300w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=768%2C416&amp;ssl=1 768w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=1024%2C555&amp;ssl=1 1024w, https://i0.wp.com/aoikaze.moe/wp-content/uploads/2016/10/06.jpg?resize=500%2C271&amp;ssl=1 500w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></p>
+<h2>第三梯队：<a href="http://home.mywebsearch.com/">MyWebSearch</a>、<a href="http://www.kiddle.co/">Kiddle</a>（儿童向）、<a href="https://www.social-searcher.com/">Social Searcher</a>（社交平台真嗨）……</h2>
+<h1>那么接下来就是使用经验的小科普了</h1>
+<p>接下来技巧示例都是基于 Lucene 内核的搜索引擎，（你问我啥是 Lucene，这个……其实……不妨自己看完本文后尝试搜索下）大部分搜索引擎都是符合条件的，接下来以 Bing 为样例进行解说（为什么不用 Google 呢？因为 Google 要翻墙啊，要是拿 Google 做范例就要讲下翻墙的事情了，上头的大人物说了不要搞事情，教学出了事故你可是要负责的（雾））</p>
+<h2>1、<strong>完整匹配</strong></h2>
+<p>在搜索引擎的输入框里，所有的空格都被理解为加号。如果你输入的是 <strong>风蓝动漫社</strong> <strong>官网</strong>，那么返回的搜索结果里也许既有 <strong>风蓝动漫社</strong> 存在，也有 <strong>官网</strong> 存在，但不一定有 <strong>风蓝动漫社</strong> <strong>官网 </strong>存在。虽然中文的话语习惯是 <strong>风蓝动漫社官网是多少</strong>，但是正确的姿势应该是 <strong>风蓝动漫社</strong> <strong>官网</strong>。另外，在英文搜索中，过分常用的、单独存在没有意义的词汇往往被忽略掉，比如 the/a/that 等等。</p>
+<p>如果你想要找含有 <strong>风蓝动漫社</strong> <strong>官网 </strong>这个组合的网页，那么你必须在搜索词前后加上引号，输入 <strong>“</strong><strong>风蓝动漫社</strong> <strong>官网</strong><strong>”</strong>，不管你输入的时候使用的是全角字符（<strong>“ </strong>或者 <strong>”</strong>）还是半角字符（<strong>&#8220;</strong>），搜索引擎都照样能够正确处理。这就是引号的作用：返回<strong>完整匹配</strong>的结果。</p>
+<p>&nbsp;</p>
+<h2>2、<strong>指定站内搜索</strong></h2>
+<p>所谓指定站内搜索就是将搜索范围限制在你指定的网站内。比如你想在 <strong><a href="/second-wordpress-site/">风蓝官网</a> </strong>中搜索关于 <strong>好哥哥 </strong>的相关信息，你可以这样搜索：</p>
+<p><strong>site:/second-wordpress-site/ </strong><strong>好哥哥</strong></p>
+<p>&nbsp;</p>
+<h2>3、<strong>通配符</strong></h2>
+<p>学习过正则表达式的朋友们应该都知道（没学过也没影响）在正则表达式中：（<strong>.</strong>）匹配任意的一个字符（<strong>*</strong>）匹配任意多的字符。在搜索引擎中有一个符号同样可以实现这个功能：（<strong>*</strong>） ， 比如我们想搜索知乎下面与名字以膜法为开头的知乎专栏，我可以这样搜索（是不是发现了寻找人生经验的小技巧）：</p>
+<p><strong>site:http://zhuanlan.zhihu.com/ </strong><strong>膜法</strong><strong>*</strong></p>
+<p>搜索网络连接错误的文章，可以这样搜索：</p>
+<p><strong>&#8220;network connect error *&#8221;</strong></p>
+<p>&nbsp;</p>
+<h2>4、<strong>语言和日期</strong></h2>
+<p>为了搜索比较新鲜的内容，或者指定时间内的内容。</p>
+<p>你可以选择像作者这样做：</p>
+<p>像本苦力这种霓虹语能力不过关的人，遇到大新闻就不能一篇篇翻消息来源了，不得不求助国内的香港记者；这时，搜索引擎主页界面上的一个小按钮就帮上大忙了：点击搜索工具 &#8211; 不限语言，下拉选择所有简体中文网页，一下子就找到了香港记者们的踪影。有时用新出的库版本，别忘了隔壁那个不限日期按钮，可以帮你找到最最新鲜的大新闻。</p>
+<p>当然你也可以在搜索框摆弄这些，像这样搜索：</p>
+<p><strong>+1s 2015..2016</strong></p>
+<p>&nbsp;</p>
+<h2>5、<strong>不含特定查询词</strong></h2>
+<p>在搜索的过程中可能我们需要屏蔽或者包含一些关键词。这时候就要用到两个我们平常很熟悉的符号（<strong>+</strong>、<strong>&#8211;</strong>）加号和减号。这很好理解，不包含某些内容我们就用（<strong>&#8211;</strong>），包含某些内容我们就用（<strong>+</strong>）。比如我们想要找一部电影（父爱如山），可能我们用着比较老的播放器它只支持 mp4 格式，不支持 avi 格式。这时候我们应该这样搜索：</p>
+<p><strong>父爱如山 +mp4</strong></p>
+<p><strong>父爱如山 -avi</strong></p>
+<h2></h2>
+<h2>6、<strong>书名号《》精确匹配</strong></h2>
+<p>查询词加上书名号<strong>《》</strong>有两层特殊功能，一是书名号会出现在搜索结果中；二是被书名号扩起来的内容，不会被拆分。 书名号在某些情况下特别有效果，比如查询词为电磁炮，如果不加书名号在很多情况下出来的是那个 railgun （当然你用百度的话就是另一回事），而加上书名号后，<strong>《电磁炮》</strong>结果就都是关于动漫方面的了。</p>
+<p>&nbsp;</p>
+<h2>7、<strong>搜索指定文件类型</strong></h2>
+<p>查询词用 <strong>Filetype</strong> 语法可以限定查询词出现在指定的文档中，支持文档格式有 pdf，doc，xls，ppt，rtf，jpg，all（所有上面的文档格式）。在日常查找一些资料用书、论文以及一些表格数据的时候这一语法是有极大帮助的。</p>
+<p>比如我们想搜一本书的 pdf 版本：</p>
+<p><strong>Filetype:pdf 某不科学的电磁炮</strong></p>
+<p>&nbsp;</p>
+<h2>8、<strong>inurl </strong><strong>搜索范围限定在 </strong><strong>URL </strong><strong>链接中（</strong><strong>URL 就是我们常说的网址）</strong></h2>
+<p>网页 URL 中的某些信息，常常有某种有价值的含义。您如果对搜索结果的 URL 做某种限定，可以获得良好的效果。</p>
+<p>例如：<strong>auto视频教程 inurl:video</strong></p>
+<p>查询词 <strong>auto视频教程 </strong>是可以出现在网页内容的任何位置，而 <strong>video</strong> 则一定出现在网页 URL 中。</p>
+<h2></h2>
+<h2>9、<strong>给予重度依赖百度的用户的一点微小的帮助</strong></h2>
+<p>通过访问 <strong><a href="http://www.baidu.com/gaoji/advanced.html">http://www.baidu.com/gaoji/advanced.html</a> </strong>网址，百度高级搜索页面将上面的所有的高级语法集成，这样就无需记忆语法，只需要填写查询词和选择相关选项就能完成复杂的语法搜索。</p>
+<p><strong> </strong></p>
+<h2>0、<strong>Tab</strong><strong>，以及宅男福利</strong></h2>
+<p>只限 Chrome 的一招：输入某个网址，再点击 Tab，会能直接使用这个站点的站内搜索了，比别人快个几秒，关键时刻也很管用不是么。</p>
+<p>最后留个福利吧，谷歌的安全搜索关闭：搜索网址加个参数 <strong>&amp;safe=off </strong>，一招就可日天。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>民那桑，本期的日在风蓝总算是到了尾声了，如果发现以上技巧使用失败，那一定是使用姿势不对，需要多尝试几次（就是说，Google 大法好（逃））。</p>
+<p>PS：下期预告：MAD的科普与基础操作</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/second-wordpress-site/2102/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2102</post-id>	</item>
+	</channel>
+</rss>
